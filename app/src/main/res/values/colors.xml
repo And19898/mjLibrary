@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="half_transparent">#7cffffff</color>
+
+    <color name="theme_color">#02baff</color>
+    <color name="theme_click_color">#5ed2fe</color>
+    <color name="theme_dark_color">#02a1dc</color>
+
+    <color name="bg_no_photo">#EEEEEE</color>
+    <color name="black_text_color">#4a4a4a</color>
+    <color name="hui_text_color">#848484</color>
+    <color name="gray_color">#9b9b9b</color>
+    <color name="hui_color">#D4D4D4</color>
+    <color name="hui_color_1">#f7f7f7</color>
+    <color name="bg_color">#f1f1f1</color>
+    <drawable name="bg_color_drawable">#f1f1f1</drawable>
+    <color name="blue_color">#00B1FF</color>
+    <color name="blue_click_color">#79d3fb</color>
+    <color name="shopcart_color">#ebf9ff</color>
+    <color name="switch_bg_color">#d3d3d3</color>
+    <color name="theme_disable_color">#9B9B9B</color>
+
+    <color name="fenhong_color">#ff4c62</color>
+    <color name="orange_color">#ff9000</color>
+    <color name="orange_click_color">#fcc176</color>
+    <color name="purple_color">#de3bff</color>
+    <color name="green_color">#7ed321</color>
+
+    <color name="red_packet_color">#ff0a28</color>
+</resources>

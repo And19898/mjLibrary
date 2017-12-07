@@ -1,0 +1,15 @@
+buildscript {
+    repositories {
+        maven { url "http://10.66.72.173:8081/nexus/content/repositories/JCenter/" }
+    }
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+buildscript {
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+    }
+}
+
+apply from: 'config/dependencies.gradle'

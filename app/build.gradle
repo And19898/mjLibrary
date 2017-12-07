@@ -1,0 +1,35 @@
+apply from: '../config/lib_module.gradle'
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile dep.appcompat
+    compile dep.design
+    compile dep.glide
+    //okgo http请求框架
+    compile(dep.okgo) {
+        exclude group: 'com.squareup.okio'
+        exclude module: 'okio'
+    }
+    //bmob云
+    compile(dep.bmob) {
+        exclude group: 'com.squareup.okio'
+        exclude module: 'okio'
+    }
+    //lean云
+    compile(dep.leanCloud) {
+        exclude group: 'com.squareup.okio'
+        exclude module: 'okio'
+    }
+    //沉浸式状态栏
+    compile dep.barlibrary
+    //轮播图
+    compile dep.bgabanner
+    //极光
+    compile dep.jpush
+    compile dep.jcore
+    //水平数字进度条
+    compile dep.numberprogressbar
+    //x5内核
+    compile files('libs/tbs_sdk_thirdapp_v3.3.0.1045_43300_sharewithdownload_withoutGame_obfs_20170605_170212.jar')
+}

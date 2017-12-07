@@ -1,0 +1,143 @@
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/bg_color"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/loginTop"
+            layout="@layout/toolbar_normal" />
+
+        <RelativeLayout
+            android:id="@+id/rl_al_logo"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@id/loginTop">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_al_line"
+            style="@style/huiLineAttr"
+            android:layout_below="@id/rl_al_logo" />
+
+        <RelativeLayout
+            android:id="@+id/rl_al_account"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_al_line">
+
+            <ImageView
+                android:id="@+id/iv_al_account"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="17dp"
+                android:padding="5dp"
+                android:src="@drawable/icon_remove" />
+
+            <com.android.mj.view.DeleteableEdittext
+                android:id="@+id/et_al_account"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toLeftOf="@id/iv_al_account"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableLeft="@drawable/icon_login_account"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:hint="请输入手机号"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textSize="@dimen/font_size" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_al_line1"
+            style="@style/huiLineAttr"
+            android:layout_below="@id/rl_al_account" />
+
+        <RelativeLayout
+            android:id="@+id/rl_al_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_al_line1">
+
+            <ImageView
+                android:id="@+id/iv_al_show"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/icon_login_normal" />
+
+            <EditText
+                android:id="@+id/et_al_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toLeftOf="@id/iv_al_show"
+                android:background="@null"
+                android:drawableLeft="@drawable/icon_login_pwd"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:hint="请输入登录密码"
+                android:paddingLeft="20dp"
+                android:password="true"
+                android:singleLine="true"
+                android:textSize="@dimen/font_size" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_al_line2"
+            style="@style/huiLineAttr"
+            android:layout_below="@id/rl_al_pwd" />
+
+        <Button
+            android:id="@+id/btn_summit"
+            style="@style/buttonThemeAttr"
+            android:layout_below="@id/tv_al_line2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="24dp"
+            android:text="登录" />
+
+        <TextView
+            android:id="@+id/tv_al_forget"
+            style="@style/huiTextBase"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/btn_summit"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/textview_white"
+            android:gravity="center"
+            android:text="忘记密码？" />
+
+        <TextView
+            android:id="@+id/tv_al_register"
+            style="@style/huiTextBase"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/btn_summit"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/textview_white"
+            android:gravity="center"
+            android:text="免费注册" />
+
+        <ProgressBar
+            style="@style/progressAttr"
+            android:visibility="gone" />
+    </RelativeLayout>
+</layout>
